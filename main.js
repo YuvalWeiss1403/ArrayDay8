@@ -300,3 +300,30 @@ practiceFileEx3_2();
 
 //No -  none of the functions changes the original array
 
+
+//Ex 6 - Bonus 
+//--------------------------------------------------------------------------------------------------------
+function practiceFileEx6(){
+    //1)
+    let element1 = ['hydrogen', 'H', 1.008];
+    let element2 = ['helium', 'He', 4.003];
+    let element26 = ['iron', 'Fe', 55.85];
+    //2)
+    let table =[];
+    table.push(element1);
+    table.push(element2);
+    table.push(element26);
+    console.log(table);
+    //3)
+    console.log(table[1]);
+    console.log(table[1][1]);
+    //4)
+    console.log(`element 1 mass: ${table[0][2]} . element 2 name: ${table[1][0]}. element 26 symbol: ${table[2][1]}`);
+    //5)
+    let my3dimensionalArray =[];
+    my3dimensionalArray.push(table);
+    console.log(`element 1 name: ${my3dimensionalArray[0][0][0]} . element 2 symbol: ${my3dimensionalArray[0][1][1]}. element 26 mass: ${my3dimensionalArray[0][2][2]}`);
+}
+
+practiceFileEx6();
+
