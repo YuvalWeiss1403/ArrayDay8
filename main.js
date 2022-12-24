@@ -248,7 +248,7 @@ practiceFileEx3_2();
 
 //Ex 3-3 is in Ex 2
 
- //Ex 4
+ //Ex 3 - 4
  //--------------------------------------------------------------------------------------------------------
  function practiceFileEx3_4(){
     let holdcabinet1 = ['duct tape','gum',3.14,false,6.022e23];
@@ -266,9 +266,9 @@ practiceFileEx3_2();
  practiceFileEx3_4();
 
  
- //Ex 5 -1 
+ //Ex 3 - 5 -1 
  //--------------------------------------------------------------------------------------------------------
- function practiceFileEx5_1(){
+ function practiceFileEx3_5_1(){
     let str = 'In space, no one can hear you code.';
     console.log(str.split());
     console.log(str.split('e'));
@@ -276,13 +276,13 @@ practiceFileEx3_2();
     console.log(str.split(''));
 }
 
- practiceFileEx5_1();
+ practiceFileEx3_5_1();
  //the purpose of the parameter inside the () is the diveder of the string.
 
  
- //Ex 5 -2
+ //Ex 3 - 5 -2
  //--------------------------------------------------------------------------------------------------------
- function practiceFileEx5_2(){
+ function practiceFileEx3_5_2(){
     let arr = ['B', 'n', 'n', 5];
     console.log(arr.join());
     console.log(arr.join('a'));
@@ -290,20 +290,20 @@ practiceFileEx3_2();
     console.log(arr.join(''));
  }
 
- practiceFileEx5_2();
+ practiceFileEx3_5_2();
 
  //the purpose of the parameter int the () is to join the array with the parameter between each member.
 
  
- //Ex 5 -3 
+ //Ex 3 - 5 -3 
  //--------------------------------------------------------------------------------------------------------
 
 //No -  none of the functions changes the original array
 
 
-//Ex 6 - Bonus 
+//Ex 3 - 6 - Bonus 
 //--------------------------------------------------------------------------------------------------------
-function practiceFileEx6(){
+function practiceFileEx3_6(){
     //1)
     let element1 = ['hydrogen', 'H', 1.008];
     let element2 = ['helium', 'He', 4.003];
@@ -325,5 +325,23 @@ function practiceFileEx6(){
     console.log(`element 1 name: ${my3dimensionalArray[0][0][0]} . element 2 symbol: ${my3dimensionalArray[0][1][1]}. element 26 mass: ${my3dimensionalArray[0][2][2]}`);
 }
 
-practiceFileEx6();
+practiceFileEx3_6();
 
+//Ex 4 
+//--------------------------------------------------------------------------------------------------------
+function practiceFileEx4(){
+    let numbers1 = [1,2,3,4,5];
+    let numbers2 = numbers1;
+    numbers1.push(6);
+    console.log(numbers1);
+    console.log(numbers2);
+
+    //part 2
+    let numbers1_b = [1,2,3,4,5];
+    let numbers2_b = numbers1.slice(0,numbers1_b.length-1);
+    numbers1_b.push(6);
+    console.log(numbers1_b);
+    console.log(numbers2_b);
+}
+
+practiceFileEx4();
